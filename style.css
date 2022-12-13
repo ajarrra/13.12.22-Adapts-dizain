@@ -1,3 +1,38 @@
 *{
     box-sizing: border-box;
 }
+
+
+.example-1{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+
+@media screen and (min-width: 200px) and (max-width:300px){
+    .example-1{
+        width: 30px;
+        height: 30px;
+        background-color: blue;
+    }
+}
+
+
+@media screen and (min-width:300px) and (max-width:400px){
+    .example-1{
+        width: 40px;
+        height: 40px;
+        background-color: red;
+    }
+}
+
+
+@media screen and (min-width:500px) and (max-width:600px) {
+    .example-1{
+        width: 60px;
+        height: 60px;
+        background-color: aqua;
+    }
+    
+}
