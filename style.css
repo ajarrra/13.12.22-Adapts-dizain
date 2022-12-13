@@ -53,7 +53,7 @@
 
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) { /*менять тему темная и светлая*/
     .example-2{
         background-color: gray;
         color: white;
@@ -64,10 +64,29 @@
     .example-2{
         color: black;
         font-size: 22px;
+        text-indent: 40px;/* абзац*/
     }
-    .example-2::first-letter{
+    .example-2::first-letter{  /*первая буква*/
         font-size: 40px;
         font-weight: 700px;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
+}
+
+
+.example-3 img{
+    float: left;
+    max-width: 400px;
+    margin-right: 20px;
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover; /* резать  не сплющивается*/
+}
+
+@media screen and (max-width:600px) {
+    .example-3 img{
+     max-width: none;
+    }
+    
 }
